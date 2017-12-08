@@ -1,0 +1,20 @@
+name       : python-envparse
+version    : 0.2.0
+release    : 1
+source     :
+    - https://pypi.python.org/packages/2f/8d/bee8a59732c169a455627ff1557d0db180f7c352b0274480267ad3e46875/envparse-0.2.0.tar.gz : 4f3b9a27bb55d27f124eb4adf006fec05e4588891c9a054a183a112645056eb7
+license    : MIT
+component  : programming.python
+summary    : Environment Variable Parsing for Python
+description: |
+    Environment Variable Parsing for Python
+builddeps  :
+    - python-pytest
+    - python-setuptools
+    - python-tox # For tests
+build      : |
+    %python_setup
+install    : |
+    %python_install
+check      : |
+    tox
